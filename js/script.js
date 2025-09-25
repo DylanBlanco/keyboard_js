@@ -1,6 +1,26 @@
 const viewText = document.getElementById('view-text');
-const jsButton = document.querySelector('.js-button');
+const jsButtonQ = document.querySelector('.js-button-q');
+const jsButtonW = document.querySelector('.js-button-w');
+const jsButtonE = document.querySelector('.js-button-e');
+const jsButtonR = document.querySelector('.js-button-r');
+const jsButtonT = document.querySelector('.js-button-t');
+const jsButtonY = document.querySelector('.js-button-y');
 
-jsButton.addEventListener('click', function consoleCiao() {
-    console.log('ciao');
+jsButtonQ.addEventListener('click', () => {
+    viewText.innerText = 'Ciao';
+});
+jsButtonW.addEventListener('click', () => {
+    viewText.innerText = 'Come stai?';
+});
+jsButtonE.addEventListener('click', () => {
+    viewText.innerText = 'Buongiorno!';
+});
+jsButtonR.addEventListener('click', () => {
+    viewText.innerText = 'Buonasera!';
+});
+jsButtonT.addEventListener('click', () => {
+    viewText.innerText = 'Arrivederci!';
+});
+jsButtonY.addEventListener('click', () => {
+    viewText.innerText = 'Grazie!';
 });
