@@ -7,20 +7,20 @@ const jsButtonT = document.querySelector('.js-button-t');
 const jsButtonY = document.querySelector('.js-button-y');
 
 jsButtonQ.addEventListener('click', () => {
-    viewText.innerText = 'Ciao';
+    viewText.innerHTML += 'Ciao' + ' ';
 });
 jsButtonW.addEventListener('click', () => {
-    viewText.innerText = 'Come stai?';
+    viewText.innerHTML += 'Come stai?' + ' ';
 });
 jsButtonE.addEventListener('click', () => {
-    viewText.innerText = 'Buongiorno!';
+    viewText.innerHTML += 'Buongiorno!' + ' ';
 });
 jsButtonR.addEventListener('click', () => {
-    viewText.innerText = 'Buonasera!';
+    viewText.innerHTML += 'Buonasera!' + ' ';
 });
 jsButtonT.addEventListener('click', () => {
-    viewText.innerText = 'Arrivederci!';
+    viewText.innerHTML += 'Arrivederci!' + ' ';
 });
 jsButtonY.addEventListener('click', () => {
-    viewText.innerText = 'Grazie!';
+    viewText.innerHTML += 'Grazie!' + ' ';
 });
