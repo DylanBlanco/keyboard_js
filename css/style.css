@@ -30,3 +30,7 @@ button {
     background: #eaeaea;
     transition: 0.2s;
 }
+
+button:hover {
+    background: #d3d3d3;
+}
