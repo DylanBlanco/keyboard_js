@@ -30,4 +30,4 @@ const alphabetMessages = [
 ];
 
 // Esporta la variabile per usarla altrove
-export default alphabetMessages;
+// export default alphabetMessages;
