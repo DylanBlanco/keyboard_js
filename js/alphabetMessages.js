@@ -28,6 +28,3 @@ const alphabetMessages = [
     { letter: 'y', message: 'Yes!' },
     { letter: 'z', message: 'Zero problemi' }
 ];
-
-// Esporta la variabile per usarla altrove
-// export default alphabetMessages;

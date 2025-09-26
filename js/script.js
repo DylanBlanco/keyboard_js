@@ -1,5 +1,3 @@
-// Import del file alphabetMessages.js
-// import alphabetMessages from './alphabetMessages.js';
 
 const viewText = document.getElementById('view-text');
 
