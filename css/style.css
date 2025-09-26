@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#view-text {
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #333;
+    min-height: 60px;
+    width: 80%;
+    background: #f5f5f5;
+    font-size: 1.2rem;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #666;
+    background: #eaeaea;
+    transition: 0.2s;
+}
