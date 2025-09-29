@@ -23,10 +23,11 @@ body {
 }
 
 #view-text {
-    min-height: 4.5rem;
-    background: rgba(255,255,255,0.03);
+    height: 150px;
+    overflow-y: auto;
+    background: rgba(36, 35, 35, 0.274);
     border: 1px solid rgba(255,255,255,0.04);
-    padding: .75rem 1rem;
+    padding: .75rem 1rem; 
     border-radius: .5rem;
     color: #e6eef8;
     font-size: 1.1rem;
