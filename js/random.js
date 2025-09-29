@@ -5,8 +5,9 @@
 
     if (randomBtn) {
         randomBtn.addEventListener("click", () => {
-        const idx = Math.floor(Math.random() * alphabetMessages.length);
-        view.innerHTML += " " + alphabetMessages[idx].message;
+        const randX = Math.floor(Math.random() * alphabetMessages.length);
+        // view.innerHTML += " " + alphabetMessages[randX].message;
+        view.innerHTML += alphabetMessages[randX].message;
         });
     }
 })();
