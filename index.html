@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <!-- <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div>
             <div>
                 SCREEN:
@@ -52,7 +52,70 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <main class="keyboard-card container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h2  mb-0">Tastiera JS</h2>
+            <small class="text-muted">Clicca un tasto per aggiungere testo</small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label small text-muted mb-1">SCREEN</label>
+            <div id="view-text" class="mb-2"></div>
+            <!-- <div class="d-flex gap-2">
+                <button id="clear-btn" class="btn btn-sm btn-outline-light">Pulisci</button>
+                <button id="newline-btn" class="btn btn-sm btn-outline-light">Nuova riga</button>
+            </div> -->
+        </div>
+
+        <div class="keyboard">
+            <!-- Row 1 (Q W E R T Y U I O P) -->
+            <div class="keyboard-row d-flex justify-content-center gap-2 mb-2">
+                <button class="btn btn-outline-primary key-btn js-button-q">Q</button>
+                <button class="btn btn-outline-primary key-btn js-button-w">W</button>
+                <button class="btn btn-outline-primary key-btn js-button-e">E</button>
+                <button class="btn btn-outline-primary key-btn js-button-r">R</button>
+                <button class="btn btn-outline-primary key-btn js-button-t">T</button>
+                <button class="btn btn-outline-primary key-btn js-button-y">Y</button>
+                <button class="btn btn-outline-primary key-btn js-button-u">U</button>
+                <button class="btn btn-outline-primary key-btn js-button-i">I</button>
+                <button class="btn btn-outline-primary key-btn js-button-o">O</button>
+                <button class="btn btn-outline-primary key-btn js-button-p">P</button>
+            </div>
+
+            <!-- Row 2 (A S D F G H J K L) -->
+            <div class="keyboard-row d-flex justify-content-center gap-2 mb-2">
+                <button class="btn btn-outline-secondary key-btn js-button-a">A</button>
+                <button class="btn btn-outline-secondary key-btn js-button-s">S</button>
+                <button class="btn btn-outline-secondary key-btn js-button-d">D</button>
+                <button class="btn btn-outline-secondary key-btn js-button-f">F</button>
+                <button class="btn btn-outline-secondary key-btn js-button-g">G</button>
+                <button class="btn btn-outline-secondary key-btn js-button-h">H</button>
+                <button class="btn btn-outline-secondary key-btn js-button-j">J</button>
+                <button class="btn btn-outline-secondary key-btn js-button-k">K</button>
+                <button class="btn btn-outline-secondary key-btn js-button-l">L</button>
+            </div>
+
+            <!-- Row 3 (Z X C V B N M) -->
+            <div class="keyboard-row d-flex justify-content-center gap-2 mb-2">
+                <button class="btn btn-outline-success key-btn js-button-z">Z</button>
+                <button class="btn btn-outline-success key-btn js-button-x">X</button>
+                <button class="btn btn-outline-success key-btn js-button-c">C</button>
+                <button class="btn btn-outline-success key-btn js-button-v">V</button>
+                <button class="btn btn-outline-success key-btn js-button-b">B</button>
+                <button class="btn btn-outline-success key-btn js-button-n">N</button>
+                <button class="btn btn-outline-success key-btn js-button-m">M</button>
+            </div>
+
+            <!-- Row 4: spazio e pulsanti funzionali (opzionale) -->
+            <div class="keyboard-row d-flex justify-content-center gap-2 align-items-center">
+                <!-- <button class="btn btn-outline-warning key-btn" id="btn-random">Random</button> -->
+                <button class="btn btn-outline-dark key-btn key-space js-button-space">SPAZIO</button>
+                <button class="btn btn-outline-danger key-btn" id="btn-backspace">Back</button>
+            </div>
+        </div>
+    </main>
 
     
     <!-- Importa PRIMA l’array e POI lo script -->
