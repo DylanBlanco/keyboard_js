@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+    <!-- <div class="vw-100 vh-100 d-flex justify-content-center align-items-center">
         <div>
             <div>
                 SCREEN:
@@ -52,7 +52,39 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <main class="keyboard-card container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h2  mb-0">Tastiera JS</h2>
+            <small class="text-muted">Clicca un tasto per aggiungere testo</small>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label small text-muted mb-1">SCREEN</label>
+            <div id="view-text" class="mb-2"></div>
+            <!-- <div class="d-flex gap-2">
+                <button id="clear-btn" class="btn btn-sm btn-outline-light">Pulisci</button>
+                <button id="newline-btn" class="btn btn-sm btn-outline-light">Nuova riga</button>
+            </div> -->
+        </div>
+
+        <div class="keyboard">
+            <!-- Row 1 (Q W E R T Y U I O P) -->
+            <div class="keyboard-row d-flex justify-content-center gap-2">
+                <button class="btn btn-outline-primary key-btn js-button-q">Q</button>
+                <button class="btn btn-outline-primary key-btn js-button-w">W</button>
+                <button class="btn btn-outline-primary key-btn js-button-e">E</button>
+                <button class="btn btn-outline-primary key-btn js-button-r">R</button>
+                <button class="btn btn-outline-primary key-btn js-button-t">T</button>
+                <button class="btn btn-outline-primary key-btn js-button-y">Y</button>
+                <button class="btn btn-outline-primary key-btn js-button-u">U</button>
+                <button class="btn btn-outline-primary key-btn js-button-i">I</button>
+                <button class="btn btn-outline-primary key-btn js-button-o">O</button>
+                <button class="btn btn-outline-primary key-btn js-button-p">P</button>
+            </div>
+        </div>
+    </main>
 
     
     <!-- Importa PRIMA l’array e POI lo script -->
