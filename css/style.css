@@ -1,36 +1,60 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f172a; /* fallback scuro se bgEffect non caricato */
+    color: #fff;
+    padding: 2rem;
+}
+
+
+
+.keyboard-card {
+    max-width: 980px;
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: .75rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
 }
 
 #view-text {
-    margin: 20px auto;
-    padding: 10px;
-    border: 1px solid #333;
-    min-height: 60px;
-    width: 80%;
-    background: #f5f5f5;
-    font-size: 1.2rem;
+    min-height: 4.5rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.04);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    color: #e6eef8;
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
 }
 
-.buttons-container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    max-width: 600px;
-    margin: auto;
+/* styling dei bottoni: maggiore altezza e aspetto "key" */
+.key-btn {
+    min-width: 50px;
+    height: 54px;
+    border-radius: .5rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    box-shadow: 0 4px 10px rgba(2,6,23,0.45);
 }
 
-button {
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #666;
-    background: #eaeaea;
-    transition: 0.2s;
+/* larghezza differente per alcuni tasti come la barra spaziatrice o tab */
+.key-space {
+    min-width: 320px;
 }
 
-button:hover {
-    background: #d3d3d3;
+/* spacing fra le righe della tastiera */
+.keyboard-row {
+    margin-bottom: .6rem;
+}
+
+/* responsive: riduci dimensione tasti su schermi piccoli */
+@media (max-width: 576px) {
+    .key-btn { height: 44px; min-width: 42px; font-size: .9rem; }
+    .key-space { min-width: 150px; }
 }

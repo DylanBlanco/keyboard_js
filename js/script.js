@@ -6,7 +6,7 @@ alphabetMessages.forEach(item => {
     if (btn) {
         btn.addEventListener('click', () => {
             // aggiunge il testo invece di sostituirlo
-            viewText.innerHTML += ' / ' + item.message;
+            viewText.innerHTML += item.message + ' / ';
         });
     }
 });
